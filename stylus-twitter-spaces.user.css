@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name           Twitter_Spaces_Setting_FHD_V
+@namespace      https://github.com/kmikamigh/stylus-twitter-spaces
+@version        0.0.1
+@description    Stylus settings when listening to Twitter Spaces in Full HD Display (1920x1080) at vertical view
+@author         KOJI MIKAMI
+@homepageURL    https://github.com/kmikamigh/stylus-twitter-spaces
+@license        MIT License
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+
+  /* Narrow width Left sidebar */
+  nav[aria-label="メインメニュー"] .css-901oao,
+  nav[aria-label="Primary"] .css-901oao {
+    display: none;
+  }
+  header.r-obd0qt.r-16y2uox.r-1g40b8q[role="banner"] {
+    flex-grow: 0;
+  }
+  .r-o96wvk {
+    width: 80px;
+  }
+
+  /*　Tweet領域の幅 */
+  [data-testid="primaryColumn"] {
+    max-width: 600px;
+  }
+
+  /* Hide Right sidebar */
+  [data-testid="sidebarColumn"] {
+    display: none;
+  }
+
+  /* Hide Sign up */
+  div[class="css-1dbjc4n r-18u37iz r-1777fci r-usiww2"] {
+    display: none;
+  }
+}
